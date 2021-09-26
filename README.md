@@ -1,2 +1,7 @@
 # Parlour-Seminario
- Parlour Seminario
+# Parlour Seminario
+
+
+-- 
+
+Integrantes:
