@@ -1,0 +1,44 @@
+form{
+    max-width: 50%;
+    margin: 150px auto;
+    padding: 0px 20px;
+    background:  #fff3cd ;
+    border-radius: 10px;
+}
+
+.ocultar{
+    display: none;
+    visibility: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn-info{
+	background-color: black;
+	color: white;
+	float:none;
+	text-align:center;
+}
+
+h2{
+	color: #1F1B1B;
+	font-weight: bold;
+	text-align: center;
+}
+
+input{
+	width: 20%;
+}
+
+.center{
+	text-align: center;
+	font-weight: bold;
+}
+
+.less{
+	width: 50%;
+	margin-left: 24%;
+}
