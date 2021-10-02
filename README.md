@@ -1,10 +1,15 @@
 # PARLOUR
 --
-
+SEMINARIO 
 #### Sistema web para ventas
+
+##### INTEGRANTES
 
 
 ---
+
+##### DOCUMENTACIÓN 
++ Aqui va la documentación
 
 
 ##### TECNOLOGIAS 
