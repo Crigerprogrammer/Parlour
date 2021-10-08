@@ -1,5 +1,5 @@
 <?php 
-$servername = ''; //tcp:parlor.database.windows.net,1433
+$servername = 'tcp:parlor.database.windows.net,1433'; //
 try  
 {  
     $conn = new PDO( "sqlsrv:server=$servername ; Database=parlor", "parlouradmin", "Pasteleria2021$$");  
