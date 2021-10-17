@@ -22,7 +22,7 @@ if(isset($_POST['cui'])){
 
     if($statement->execute() ){
         $mensaje = "Cliente creado correctamente, Favor ingresar Usuario";
-        header("location:registrarse2.php");
+        header("location:../registrarse2.php");
         echo '<h1 class="bad">';
         echo $mensaje;
         echo '</h1>';
