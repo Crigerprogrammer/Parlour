@@ -20,7 +20,7 @@ if(isset($_POST['cui'])){
     $consulta2 = "CALL ES_EMPLEADO";
     $statement2 = $conn->prepare($consulta2);
 
-    if($statement->execute() AND $statement2->execute()){
+    if($statement->execute() or $statement2->execute()){
         $mensaje = "Cliente creado correctamente, Favor ingresar Usuario";
         header("location:registrarse2.php");
         echo '<h1 class="bad">';
