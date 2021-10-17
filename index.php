@@ -1,6 +1,6 @@
 <?php
 
-require 'conexion.php';
+require 'php/conexion.php';
 
 ?>
 
@@ -21,7 +21,7 @@ require 'conexion.php';
    <p>Contraseña <input type="password" placeholder="ingrese su contraseña" name="contraseña"></p>
    <input type="submit" value="Ingresar">
    <br></br>
-   <a href="registrarse.php" class="linkregistrar">Registrarse a Parlour</a>
+   <a href="registrarse1.php" class="linkregistrar">Registrarse a Parlour</a>
    </form> 
 </body>
 </html>
