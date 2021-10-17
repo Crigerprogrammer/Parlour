@@ -1,5 +1,5 @@
 <?php 
-  require 'php/regvalidar.php'
+  require 'php/regvalidar.php';
   require 'php/ccliente.php';
   require 'php/conexion.php';
 
