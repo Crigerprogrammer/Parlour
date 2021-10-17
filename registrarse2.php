@@ -1,11 +1,10 @@
 <?php 
   require 'php/ccliente.php';
-  require 'php/conexion.php';
 
   $sql2 = "
   SELECT * FROM CLIENTE 
   WHERE FECHA_INGRESO = (SELECT MAX(FECHA_INGRESO) FROM CLIENTE)";
-  $statement2 = $conn->prepare($sql);
+  $statement2 = $conn->prepare($sql2);
   $statement2->execute();
   $cui = $statement2->fetchAll(PDO::FETCH_OBJ);
 
