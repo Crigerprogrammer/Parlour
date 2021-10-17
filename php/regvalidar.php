@@ -17,8 +17,6 @@ if(isset($_POST['cui'])){
         '".$direccion."', '".$nit."')";
     $statement = $conn->prepare($consulta);
 
-    $sql = "EXEC ES_EMPLEADO";
-    $stmt = sqlsrv_prepare($conn, $sql);
 
     if($statement->execute() ){
         $mensaje = "Cliente creado correctamente, Favor ingresar Usuario";
