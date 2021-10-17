@@ -30,7 +30,7 @@
         type="text"
         class=""
         id="regusuario"
-        name="regusuario"
+        name="cui2"
         value = "<?php echo $cui; ?>"
         required
         >
