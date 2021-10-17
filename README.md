@@ -4,7 +4,7 @@ SEMINARIO
 #### Sistema web para ventas
 
 ##### INTEGRANTES
-
+Enghelbert Mariano Sandoval Cano	** 0900-19-15832 **
 
 ---
 
