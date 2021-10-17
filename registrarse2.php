@@ -1,4 +1,13 @@
-<?php require 'php/ccliente.php';?>
+<?php require 'php/ccliente.php';
+  require 'php/conexion.php';
+
+  $sql = "SELECT * FROM TIPO_USUARIO";
+  $statement = $conn->prepare($sql);
+  $statement->execute();
+  $tipo_usuarios = $statement->fetchAll(PDO::FETCH_OBJ);
+
+
+?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -20,7 +29,7 @@
         class=""
         id="regusuario"
         name="regusuario"
-        placeholder="Ingrese su Usuario"
+        placeholder="CUI"
         required
         >
        <label for="campousuario">Usuario</label>
@@ -43,7 +52,9 @@
         >
         <label for="campocontraseña">Tipo_Usuario</label>
        <select >
-        <option></option>    
+       <?php foreach($tipo_usuarios as $tipo_usuario): ?>
+                <option value="<?= $tipo_usuario->COD_TIPO_USUARIO; ?>" class="form-control"><?= $tipo_usuario->DESC_USUARIO; ?></option>
+        <?php endforeach; ?>   
     </select>
     </div>
     </br>
