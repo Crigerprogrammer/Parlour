@@ -12,9 +12,9 @@ if(isset($_POST['cui'])){
     $nit = $_POST['nit'];
 
 
-    $consulta = "INSERT INTO [dbo].[CLIENTE] (CUI, NOMBRES, APELLIDOS, TEL_DEFAULT, TEL_SECUNDARIO, CORREO, DIRECCION, NIT) 
+    $consulta = "INSERT INTO [dbo].[CLIENTE] (CUI, NOMBRES, APELLIDOS, TEL_DEFAULT, TEL_SECUNDARIO, CORREO, DIRECCION, NIT, FECHA_INGRESO) 
         VALUES ('".$cui."', '".$nombres."', '".$apellidos."', '".$tel_default."', '".$tel_secundario."', '".$correo."',
-        '".$direccion."', '".$nit."')";
+        '".$direccion."', '".$nit."', SYSDATETIME())";
     $statement = $conn->prepare($consulta);
 
 
