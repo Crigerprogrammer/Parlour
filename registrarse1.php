@@ -1,4 +1,6 @@
-<?php require 'php/regvalidar.php';?>
+<?php 
+include 'php/regvalidar.php';
+?>
 
 <!DOCTYPE html>
 <html lang="es">
