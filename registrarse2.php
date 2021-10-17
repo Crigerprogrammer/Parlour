@@ -1,4 +1,4 @@
-<?php require 'ccliente.php';?>
+<?php require 'php/ccliente.php';?>
 
 <!DOCTYPE html>
 <html lang="es">
