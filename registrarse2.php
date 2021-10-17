@@ -1,4 +1,4 @@
-<?php require 'regvalidar.php';?>
+<?php require 'ccliente.php';?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -12,9 +12,9 @@
 </head>
 <body>
    <form method="POST" name="CrearUsuario" enctype="multipart/form-data">
-   <h1 class="animate__animated animate__backInLeft">Formulario de Registro</h1>
+   <h1 class="animate__animated animate__backInLeft">Formulario de Usuario</h1>
    <div>
-       <label for="campousuario">Usuario</label>
+        <label for="campousuario">CUI</label>
        <input
         type="text"
         class=""
@@ -23,15 +23,28 @@
         placeholder="Ingrese su Usuario"
         required
         >
+       <label for="campousuario">Usuario</label>
+       <input
+        type="text"
+        class=""
+        id="regusuario"
+        name="usuario"
+        placeholder="Ingrese su Usuario"
+        required
+        >
         <label for="campocontraseña">Contraseña</label>
        <input
         type="password"
         class=""
         id="regcontraseña"
-        name="regcontraseña"
+        name="contraseña"
         placeholder="Ingrese su Contraseña"
         required
         >
+        <label for="campocontraseña">Tipo_Usuario</label>
+       <select >
+        <option></option>    
+    </select>
     </div>
     </br>
     <div>
