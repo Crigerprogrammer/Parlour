@@ -17,6 +17,10 @@ if(isset($_POST['cui'])){
         '".$direccion."', '".$nit."')";
     $statement = $conn->prepare($consulta);
 
+    $consulta2 = "EXEC ES_EMPLEADO";
+    $statement2 = $conn->prepare($consulta2);
+    $statement2->execute();
+
     if($statement->execute()){
         $mensaje = "Cliente creado correctamente, Favor ingresar Usuario";
         header("location:registrarse2.php");
