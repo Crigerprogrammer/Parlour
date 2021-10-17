@@ -66,6 +66,7 @@ include 'php/regvalidar.php';
         class=""
         id="regcontraseña"
         name="correo"
+        placeholder="Ej: example@gmail.com"
         required
         >
         <label for="Tel">Direccion</label>
@@ -74,6 +75,7 @@ include 'php/regvalidar.php';
         class=""
         id="regcontraseña"
         name="direccion"
+        placeholder = 'Ej: Calle x Avenida x '
         required
         >
         <label for="Tel">NIT</label>
@@ -81,6 +83,7 @@ include 'php/regvalidar.php';
         type="text"
         class=""
         id="regcontraseña"
+        placeholder = 'Ingrese su Nit'
         name="nit"
         required
         >
