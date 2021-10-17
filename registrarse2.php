@@ -1,4 +1,6 @@
-<?php require 'php/ccliente.php';
+<?php 
+  require 'php/regvalidar.php'
+  require 'php/ccliente.php';
   require 'php/conexion.php';
 
   $sql = "SELECT * FROM TIPO_USUARIO";
@@ -29,7 +31,7 @@
         class=""
         id="regusuario"
         name="regusuario"
-        placeholder="CUI"
+        value = "<?php echo $cui; ?>"
         required
         >
        <label for="campousuario">Usuario</label>
