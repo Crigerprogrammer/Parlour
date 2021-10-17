@@ -2,8 +2,13 @@
   require 'php/ccliente.php';
   require 'php/conexion.php';
 
-  if(isset($_GET['editar'])){
-    $cui = $_GET['editar'];
+  $sql2 = "
+  SELECT * FROM CLIENTE 
+  WHERE FECHA_INGRESO = (SELECT MAX(FECHA_INGRESO) FROM CLIENTE)";
+  $statement2 = $conn->prepare($sql);
+  $statement2->execute();
+  $cui = $statement2->fetchAll(PDO::FETCH_OBJ);
+
 
   $sql = "SELECT * FROM TIPO_USUARIO";
   $statement = $conn->prepare($sql);
@@ -33,7 +38,9 @@
         class=""
         id="regusuario"
         name="cui2"
-        value = "<?php echo $cui; ?>"
+        <?php foreach($cui as $cuis): ?>
+        value =" <?= $cuis->CUI; ?>" 
+        <?php endforeach; ?>   
         required
         >
        <label for="campousuario">Usuario</label>
