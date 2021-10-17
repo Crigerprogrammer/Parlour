@@ -1,7 +1,9 @@
 <?php 
-  require 'php/regvalidar.php';
   require 'php/ccliente.php';
   require 'php/conexion.php';
+
+  if(isset($_GET['editar'])){
+    $cui = $_GET['editar'];
 
   $sql = "SELECT * FROM TIPO_USUARIO";
   $statement = $conn->prepare($sql);

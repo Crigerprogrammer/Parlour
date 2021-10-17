@@ -90,11 +90,14 @@ include 'php/regvalidar.php';
     </div>
     </br>
     <div>
-        <a onclick="return confirm('Esta seguro de registrarse?')">
+        <a 
+        href="registrarse2.php?editar=<?php echo $_POST['cui']; ?>"
+        onclick="return confirm('Esta seguro de registrarse?')">
             <button type="submit"
             value="Registrar Usuario"
             name="send"
             class="send">Registrar Usuario </button>
+            
         </a>
     </div>
 </br>
