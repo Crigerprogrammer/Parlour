@@ -61,7 +61,7 @@
         required
         >
         <label for="campocontraseña">Tipo_Usuario</label>
-       <select >
+       <select name="tip_usuario">
        <?php foreach($tipo_usuarios as $tipo_usuario): ?>
                 <option value="<?= $tipo_usuario->COD_TIPO_USUARIO; ?>" class="form-control"><?= $tipo_usuario->DESC_USUARIO; ?></option>
         <?php endforeach; ?>   
