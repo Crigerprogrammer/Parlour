@@ -23,6 +23,7 @@ if(isset($_POST['cui'])){
         echo '<h1 class="bad">';
         echo $mensaje;
         echo '</h1>';
+        header("location:registrarse2.php");
     }
 }
 
