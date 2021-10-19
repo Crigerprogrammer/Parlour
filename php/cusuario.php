@@ -2,13 +2,13 @@
 require ("conexion.php");
 
 if(isset($_POST['usuario'])){
+    $cui = $_POST['cui2'];
     $usuario = $_POST['usuario'];
     $contraseña = $_POST['contraseña'];
     $estado = 1;
-    $cui = $_POST['cui2'];
 
     $sql = "INSERT INTO USUARIO(USUARIO, CONTRASEÑA, ESTADO)
-            VALUES('".$usuario."', CAST('".$contraseña."'AS VARBINARY(MAX)), '".$estado"')";
+            VALUES('".$cui."', '".$usuario."', CAST('".$contraseña."'AS VARBINARY(MAX)), '".$estado"')";
     $statement = $conn->prepare($sql);
 
     if($statement->execute()){
