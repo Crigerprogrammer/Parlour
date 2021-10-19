@@ -1,10 +1,11 @@
 <?php 
 require ("conexion.php");
 
-if(isset($_POST['regusuario'])){
-    $usuario = $_POST['regusuario'];
-    $contraseña = $_POST['regcontraseña'];
+if(isset($_POST['usuario'])){
+    $usuario = $_POST['usuario'];
+    $contraseña = $_POST['contraseña'];
     $estado = 1;
+    $cui = $_POST['cui2'];
 
     $sql = "INSERT INTO USUARIO(USUARIO, CONTRASEÑA, ESTADO)
             VALUES('".$usuario."', CAST('".$contraseña."'AS VARBINARY(MAX)), '".$estado"')";
