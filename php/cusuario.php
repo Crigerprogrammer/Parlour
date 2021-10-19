@@ -8,7 +8,7 @@ if(isset($_POST['usuario'])){
     $estado = 1;
 
     $sql = "INSERT INTO USUARIO(USUARIO, CONTRASEÑA, ESTADO)
-            VALUES('".$cui."', '".$usuario."', CAST('".$contraseña."'AS VARBINARY(MAX)), '".$estado"')";
+            VALUES('".$cui."', '".$usuario."', CAST('".$contraseña."'AS VARBINARY(MAX)), '".$estado."')";
     $statement = $conn->prepare($sql);
 
     if($statement->execute()){
