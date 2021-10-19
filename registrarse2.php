@@ -1,5 +1,5 @@
 <?php 
-  require 'php/ccliente.php';
+  require 'php/cusuario.php';
 
   $sql2 = "
   SELECT * FROM CLIENTE 
