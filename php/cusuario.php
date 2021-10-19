@@ -16,5 +16,6 @@ if(isset($_POST['usuario'])){
         echo '<h1 class= "bad">';
         echo $mensaje;
         echo '</h1>';
+        header ("location:index.php");
     }
 }
