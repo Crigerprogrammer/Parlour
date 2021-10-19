@@ -100,9 +100,8 @@ include 'php/regvalidar.php';
             
         </a>
     </div>
-</br>
-    header("location:registrarse2.php");
-   //<a href="index.php" class="linkregresar">Gracias por registrarse, Favor de llenar usuario</a>
+    </br>
+   <a href="index.php" class="linkregresar">Gracias por registrarse, Favor de llenar usuario</a>
    </form>
 </body>
 </html>
