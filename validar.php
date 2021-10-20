@@ -17,7 +17,24 @@ session_start();
 
   if($filas == TRUE){
   
-      header("location:index2.php");
+	$codigo_usuario = $filas[0][5];
+	$msg = "Codigo usuario es : " . $codigo_usuario;
+	if($codigo_usuario == 1)
+	{
+		//echo "<script type='text/javascript'>alert('$msg');</script>";
+		header("location:index3.php");
+	}
+	elseif($codigo_usuario == 2)
+	{
+		//echo "<script type='text/javascript'>alert('$msg');</script>";
+		header("location:index2.php");
+	}
+	elseif($codigo_usuario == 8)
+	{
+		//echo "<script type='text/javascript'>alert('$msg');</script>";
+		header("location:index2.php");
+	}
+      
 
   } else{
       ?>
