@@ -41,6 +41,7 @@ input[type='submit']{
 .send{
 	background-color: #AC915A;
 	color: #fff;
+	padding: 10px 30px;
 	width: calc(80% - 20px);
 	margin: 0 10%;
 	margin-top: 10px;
