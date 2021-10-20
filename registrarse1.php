@@ -96,7 +96,7 @@ include 'php/regvalidar.php';
             <button type="submit"
             value="Registrar Usuario"
             name="send"
-            class="send">Registrar Usuario </button>
+            class="send">Confirmar Datos </button>
             
         </a>
     </div>
