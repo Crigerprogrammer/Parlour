@@ -77,7 +77,7 @@
         </a>
     </div>
 </br>
-   <a href="index.php" class="linkregresar">Gracias por registrarse, regresar a inicio</a>
+   <a class="linkregresar">Gracias por registrarse, al completar el formulario ingrese nuevamente</a>
    </form>
 </body>
 </html>
