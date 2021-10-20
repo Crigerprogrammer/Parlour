@@ -101,7 +101,7 @@ include 'php/regvalidar.php';
         </a>
     </div>
     </br>
-   <a href="index.php" class="linkregresar">Gracias por registrarse, Favor de llenar usuario</a>
+   <a class="linkregresar">Por favor completar todos los campos del formulario</a>
    </form>
 </body>
 </html>
