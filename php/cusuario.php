@@ -6,9 +6,10 @@ if(isset($_POST['usuario'])){
     $usuario = $_POST['usuario'];
     $contraseña = $_POST['contraseña'];
     $estado = 1;
+    $tipousuario = ['tip_usuario'];
 
-    $sql = "INSERT INTO USUARIO (CUI, USUARIO, CONTRASEÑA, ESTADO)
-            VALUES('".$cui."', '".$usuario."', CAST('".$contraseña."'AS VARBINARY(MAX)), '".$estado."')";
+    $sql = "INSERT INTO USUARIO (CUI, USUARIO, CONTRASEÑA, ESTADO, COD_TIPO_USUARIO)
+            VALUES('".$cui."', '".$usuario."', CAST('".$contraseña."'AS VARBINARY(MAX)), '".$estado."', '".$tipousuario."')";
     $statement = $conn->prepare($sql);
 
     if($statement->execute()){
