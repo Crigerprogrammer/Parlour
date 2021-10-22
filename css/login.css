@@ -55,7 +55,11 @@ input[type='submit']{
 	text-align: center;
 	color: #fff;
 }
-
+.olvideclave{
+	text-align: center;
+	color: #fff;
+	font-family: cursive;
+}
 .linkregresar{
 	text-align: center;
 	color: #fff;
