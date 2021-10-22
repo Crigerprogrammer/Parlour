@@ -10,6 +10,8 @@ form {
 	background-color: #DEA5A4;
 	margin: calc(20% + 100px);
 	margin-top: 70px;
+	border: 1px solid white;
+	border-radius: 1em;
 	padding-top: 28px;
 	margin-bottom: 30px
 }
