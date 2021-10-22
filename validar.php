@@ -45,6 +45,5 @@ session_start();
         <h1 class="bad">ERROR DE AUTENTICACIÓN, SI NO RECUERDA SU CONTRASEÑA CONTÁCTENOS</h1>
   <?php
       }
-sqlsrv_free_stmt($filas);
-sqlsrv_close($conn);
+
   ?>
