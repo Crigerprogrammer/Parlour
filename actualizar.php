@@ -19,7 +19,7 @@ require 'php/cambiarclave.php';
    <h1 class="animate__animated animate__backInLeft">Ingrese los datos para actualizar sus credenciales</h1>
    <p>Usuario Actual <input type="text" placeholder="ingrese su usuario actual" name="cambiarusuario"></p>
    <p>Nueva Contraseña <input type="password" placeholder="ingrese su nueva contraseña" name="cambiarcontraseña"></p>
-   <input type="submit" value="Ingresar">
+   <input type="submit" value="Cambiar Datos">
    <br></br>
    <a href="index.php" class="linkregistrar">Si no desea actualizar datos, regrese a inicio</a>
    </form> 
