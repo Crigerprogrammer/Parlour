@@ -23,7 +23,7 @@ require 'php/conexion.php';
    <br></br>
    <a href="registrarse1.php" class="linkregistrar">Registrarse a Parlour</a>
     <br><br>
-    <a href="registrarse1.php" class="olvideclave">¿Olvidó su Contraseña?</a>
+    <a href="actualizar.php" class="olvideclave">¿Olvidó su Contraseña?</a>
    </form> 
 </body>
 </html>
