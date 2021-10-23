@@ -153,7 +153,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<?php endforeach; ?>   
 			</select>
 			</div>
-		
+
+			<div>
+        <a onclick="return confirm('Esta seguro de Comprar?')">
+            <button type="submit"
+            value="Registrar Usuario"
+            name="send"
+            class="send">Comprar Promocion </button>
+        </a>
+    </div>
 				
 	</div>
 	</div>
