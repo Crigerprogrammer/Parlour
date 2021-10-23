@@ -62,9 +62,9 @@ Usamos [Git](https://git-scm.com/) para el versionado. Para todas las versiones 
 ## Autores ✒️
 
 * **Cristian Hernandez** - 
-* **Christopher Flores** - 
+* **Cristopher Flores** - 
 * **Mariano Sandoval** -
-* **Maria Jose**
+* **Maria Jose Barrios**
 
 
 ---
