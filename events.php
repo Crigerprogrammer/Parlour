@@ -125,53 +125,27 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					aria-describedby="basic-addon1">
 			</div>
 			<div class="input-group wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-					<input type="text" class="form-control" placeholder="Direccion">
-				<span class="input-group-addon"></span>
+				<span class="input-group-addon" id="basic-addon1"></span>
+				<input 
+					type="text" 
+					class="form-control" 
+					<?php foreach($cui as $cuis): ?>
+					value =" <?= $cuis->DIRECCION; ?>" 
+					<?php endforeach; ?>  
+					aria-describedby="basic-addon1">
 			</div>
-			
-			<div class="row wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-				<div class="col-lg-6 in-gp-tl">
-					<div class="input-group">
-						<span class="input-group-addon">
-							<input type="checkbox" aria-label="..." placeholder="Tipo Suscripcion">
-						</span>
-						<input type="text" class="form-control" aria-label="...">
-					</div><!-- /input-group -->
-				</div><!-- /.col-lg-6 -->
-				<div class="col-lg-6 in-gp-tb">
-					<div class="input-group">
-						<span class="input-group-addon">
-							<input type="checkbox" aria-label="...">
-						</span>
-						<input type="text" class="form-control" aria-label="...">
-					</div><!-- /input-group -->
-				</div><!-- /.col-lg-6 -->
-			</div><!-- /.row -->
-			<div class="row wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-				<div class="col-lg-6 in-gp-tl">
-					<div class="input-group">
-						<span class="input-group-btn">
-							<button class="btn btn-default" type="button">Go!</button>
-						</span>
-						<input type="text" class="form-control" placeholder="Search for...">
-					</div><!-- /input-group -->
-				</div><!-- /.col-lg-6 -->
-				<div class="col-lg-6 in-gp-tb">
-					<div class="input-group">
-						<input type="text" class="form-control" placeholder="Search for...">
-						<span class="input-group-btn">
-							<button class="btn btn-default" type="button">Go!</button>
-						</span>
-					</div><!-- /input-group -->
-				</div><!-- /.col-lg-6 -->
-			</div><!-- /.row -->
-			<div class="row wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+			<div class="input-group wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+				<span class="input-group-addon" id="basic-addon1"></span>
+				<input 
+					type="text" 
+					class="form-control" 
+					<?php foreach($cui as $cuis): ?>
+					value =" <?= $cuis->CUI; ?>" 
+					<?php endforeach; ?>  
+					aria-describedby="basic-addon1">
+			</div>
+							
 				
-				</div><!-- /.col-lg-6 -->
-				<div class="col-lg-6 in-gp-tb">
-					
-				</div><!-- /.col-lg-6 -->
-			</div><!-- /.row -->
 	</div>
 	</div>
 
