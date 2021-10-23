@@ -43,8 +43,8 @@
 				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 					<nav class="cl-effect-13" id="cl-effect-13">
 						<ul class="nav navbar-nav">
-							<li><a href="index.html" class="active">Inicio</a></li>
-							<li><a href="events.html">Comprar</a></li>
+							<li><a href="index2.php" class="active">Inicio</a></li>
+							<li><a href="events.php">Comprar</a></li>
 							<li><a href="short-codes.html">Suscribirme!</a></li>
 							<li role="presentation" class="dropdown">
 								<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
