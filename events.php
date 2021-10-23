@@ -153,22 +153,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<?php endforeach; ?>   
 			</select>
 			</div>
-
-
+			
+			<div class="input-group wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">			
+			<a onclick="return confirm('Esta seguro de Comprar?')">
+            <button type="submit"
+            value="Registrar Usuario"
+            name="send"
+            class="btn btn-warning">Comprar Promocion </button>
+       		 </a>
+				</div>
 				
 	</div>
 	</div>
 
 </form>
 
-	<div>
-        <a onclick="return confirm('Esta seguro de Comprar?')">
-            <button type="submit"
-            value="Registrar Usuario"
-            name="send"
-            class="send">Comprar Promocion </button>
-        </a>
-    </div>
+
+
 
 
 
