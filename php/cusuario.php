@@ -1,18 +1,22 @@
 <?php 
 require ("conexion.php");
 
-if(isset($_POST['tipo_usuario'])){
-    $tipo = $_POST['tipo_usuario'];
-    $desc = $_POST['desc_usuario'];
+if(isset($_POST['usuario'])){
+    $cui = $_POST['cui2'];
+    $usuario = $_POST['usuario'];
+    $contraseña = $_POST['contraseña'];
+    $estado = 1;
+    $tipousuario = $_POST['tip_usuario'];
 
-    $sql = "INSERT INTO TIPO_USUARIO(TIPO_USUARIO, DESC_USUARIO)
-            VALUES('".$tipo."', CAST('".$desc."'AS VARBINARY(MAX)) )";
+    $sql = "INSERT INTO USUARIO (CUI, USUARIO, CONTRASEÑA, ESTADO, COD_TIPO_USUARIO)
+            VALUES('".$cui."', '".$usuario."', CAST('".$contraseña."'AS VARBINARY(MAX)), '".$estado."', '".$tipousuario."')";
     $statement = $conn->prepare($sql);
 
     if($statement->execute()){
-        $mensaje = "USUARIO Agregado Correctamente";
-        echo '<div class="alert alert-success">';
+        $mensaje = "USUARIO Creado Correctamente";
+        echo '<h1 class= "bad">';
         echo $mensaje;
-        echo '</div>';
+        echo '</h1>';
+        header ("location:index.php");
     }
 }

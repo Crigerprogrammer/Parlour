@@ -22,6 +22,8 @@ require 'php/conexion.php';
    <input type="submit" value="Ingresar">
    <br></br>
    <a href="registrarse1.php" class="linkregistrar">Registrarse a Parlour</a>
+    <br><br>
+    <a href="actualizar.php" class="olvideclave">¿Olvidó su Contraseña?</a>
    </form> 
 </body>
 </html>

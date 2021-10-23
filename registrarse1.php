@@ -96,12 +96,12 @@ include 'php/regvalidar.php';
             <button type="submit"
             value="Registrar Usuario"
             name="send"
-            class="send">Registrar Usuario </button>
+            class="send">Confirmar Datos </button>
             
         </a>
     </div>
-</br>
-   <a href="index.php" class="linkregresar">Gracias por registrarse, Favor de llenar usuario</a>
+    </br>
+   <a class="linkregresar">Por favor completar todos los campos del formulario</a>
    </form>
 </body>
 </html>

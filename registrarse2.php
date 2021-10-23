@@ -1,5 +1,5 @@
 <?php 
-  require 'php/ccliente.php';
+  require 'php/cusuario.php';
 
   $sql2 = "
   SELECT * FROM CLIENTE 
@@ -60,8 +60,9 @@
         placeholder="Ingrese su Contraseña"
         required
         >
+        <br><br>
         <label for="campocontraseña">Tipo_Usuario</label>
-       <select name="tip_usuario">
+       <select name="tip_usuario" class="form_tipousuario">
        <?php foreach($tipo_usuarios as $tipo_usuario): ?>
                 <option value="<?= $tipo_usuario->COD_TIPO_USUARIO; ?>" class="form-control"><?= $tipo_usuario->DESC_USUARIO; ?></option>
         <?php endforeach; ?>   
@@ -77,7 +78,7 @@
         </a>
     </div>
 </br>
-   <a href="index.php" class="linkregresar">Gracias por registrarse, regresar a inicio</a>
+   <a class="linkregresar">Gracias por registrarse, al completar el formulario ingrese nuevamente</a>
    </form>
 </body>
 </html>
