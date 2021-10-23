@@ -8,8 +8,6 @@ try
 } 
 
 
-if($conn == true)
-     echo 'Si se conecto';
 
 
 //echo 'Hola';

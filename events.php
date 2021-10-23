@@ -154,7 +154,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</select>
 			</div>
 
-			<div>
+
+				
+	</div>
+	</div>
+
+</form>
+
+	<div>
         <a onclick="return confirm('Esta seguro de Comprar?')">
             <button type="submit"
             value="Registrar Usuario"
@@ -162,12 +169,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             class="send">Comprar Promocion </button>
         </a>
     </div>
-				
-	</div>
-	</div>
-
-</form>
-
 
 
 
