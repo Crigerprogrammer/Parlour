@@ -30,7 +30,7 @@ if(isset($_POST['cui'])){
             </div>
           </div>
         </div>
-      </div>'
+      </div>';
         
     }
 }
