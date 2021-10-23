@@ -121,7 +121,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<?php foreach($cui as $cuis): ?>
 					value =" <?= $cuis->CORREO; ?>" 
 					<?php endforeach; ?>  
-					aria-describedby="basic-addon2">
+					aria-describedby="basic-addon1">
 			</div>
 			<div class="input-group wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
 					<input type="text" class="form-control" placeholder="Direccion">
