@@ -9,10 +9,10 @@
   $cui = $statement2->fetchAll(PDO::FETCH_OBJ);
 
 
-  $sql = "SELECT * FROM TIPO_USUARIO";
+  $sql = "SELECT * FROM PROMOCION";
   $statement = $conn->prepare($sql);
   $statement->execute();
-  $tipo_usuarios = $statement->fetchAll(PDO::FETCH_OBJ);
+  $promociones = $statement->fetchAll(PDO::FETCH_OBJ);
 
 ?>
 
@@ -144,7 +144,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<?php endforeach; ?>  
 					aria-describedby="basic-addon1" readonly>
 			</div>
-							
+
+			<div class="input-group wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+			<span class="input-group-addon" id="basic-addon1"></span>
+			<select name="tip_usuario" class="form-control">
+			<?php foreach($promociones as $promocion): ?>
+						<option value="<?= $promocion->COD_PROMOCION; ?>" class="form-control"><?= $promocion->DESC_PROMOCION; ?></option>
+				<?php endforeach; ?>   
+			</select>
+			</div>
+		
 				
 	</div>
 	</div>
