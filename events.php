@@ -115,6 +115,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					aria-describedby="basic-addon1">
 			</div>
 			<div class="input-group wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+				<span class="input-group-addon" id="basic-addon1"></span>
 				<input 
 					type="text" 
 					class="form-control"  
