@@ -1,5 +1,5 @@
 <?php
-	require 'php/conexion.php';
+
 ?>
 
 
@@ -49,8 +49,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 				<nav class="cl-effect-13" id="cl-effect-13">
 					<ul class="nav navbar-nav">
-						<li><a href="index.html" class="active">Inicio</a></li>
-						<li><a href="events.html">Comprar</a></li>
+						<li><a href="index2.php" class="active">Inicio</a></li>
+						<li><a href="events.php">Comprar</a></li>
 						<li><a href="short-codes.html">Suscribirme!</a></li>
 						<li role="presentation" class="dropdown">
 							<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
@@ -76,6 +76,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <!-- header -->
 
+<form method="POST" name="CrearCliente" enctype="multipart/form-data">
 <div class="typo">
 	<div class="container">
 <h3 class="bars wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">Comprar</h3>
@@ -137,6 +138,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div><!-- /.row -->
 	</div>
 	</div>
+
+</form>
 
 
 
