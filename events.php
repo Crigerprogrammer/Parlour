@@ -138,6 +138,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<span class="input-group-addon" id="basic-addon1"></span>
 				<input 
 					type="text" 
+					name="cui"
 					class="form-control" 
 					<?php foreach($cui as $cuis): ?>
 					value =" <?= $cuis->CUI; ?>" 
@@ -147,7 +148,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 			<div class="input-group wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
 			<span class="input-group-addon" id="basic-addon1"></span>
-			<select name="tip_usuario" class="form-control">
+			<select name="tip_usuario" class="form-control" name="promocion">
 			<?php foreach($promociones as $promocion): ?>
 						<option value="<?= $promocion->COD_PROMOCION; ?>" class="form-control"><?= $promocion->DESC_PROMOCION; ?></option>
 				<?php endforeach; ?>   

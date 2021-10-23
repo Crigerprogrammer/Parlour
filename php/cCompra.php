@@ -1,22 +1,20 @@
 <?php 
 require ("conexion.php");
 
-if(isset($_POST['usuario'])){
-    $cui = $_POST['cui2'];
-    $usuario = $_POST['usuario'];
-    $contraseña = $_POST['contraseña'];
-    $estado = 1;
-    $tipousuario = $_POST['tip_usuario'];
-
-    $sql = "INSERT INTO USUARIO (CUI, USUARIO, CONTRASEÑA, ESTADO, COD_TIPO_USUARIO)
-            VALUES('".$cui."', '".$usuario."', CAST('".$contraseña."'AS VARBINARY(MAX)), '".$estado."', '".$tipousuario."')";
+if(isset($_POST['cui'])){
+    $cui = $_POST['cui'];
+    $promocion = $_POST['promocion'];
+    $movimiento = 1;
+   
+    $sql = "INSERT INTO MOV_SUSCRIPCIONES (CUI, COD_PROMOCION, COD_MOVIMIENTO)
+            VALUES('".$cui."', '".$promocion."','".$movimiento."')";
     $statement = $conn->prepare($sql);
 
     if($statement->execute()){
-        $mensaje = "USUARIO Creado Correctamente";
+        $mensaje = "COMPRA REGISTRADA";
         echo '<h1 class= "bad">';
         echo $mensaje;
         echo '</h1>';
-        header ("location:index.php");
+        header ("location:events.php");
     }
 }
