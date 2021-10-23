@@ -102,7 +102,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<?php foreach($cui as $cuis): ?>
 					value =" <?= $cuis->NOMBRES; ?>" 
 					<?php endforeach; ?>  
-					aria-describedby="basic-addon1">
+					aria-describedby="basic-addon1" readonly>
 			</div>
 			<div class="input-group wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
 				<span class="input-group-addon" id="basic-addon1"></span>
@@ -112,7 +112,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<?php foreach($cui as $cuis): ?>
 					value =" <?= $cuis->APELLIDOS; ?>" 
 					<?php endforeach; ?>  
-					aria-describedby="basic-addon1">
+					aria-describedby="basic-addon1" readonly>
 			</div>
 			<div class="input-group wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
 				<span class="input-group-addon" id="basic-addon1"></span>
@@ -122,7 +122,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<?php foreach($cui as $cuis): ?>
 					value =" <?= $cuis->CORREO; ?>" 
 					<?php endforeach; ?>  
-					aria-describedby="basic-addon1">
+					aria-describedby="basic-addon1" readonly>
 			</div>
 			<div class="input-group wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
 				<span class="input-group-addon" id="basic-addon1"></span>
@@ -132,7 +132,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<?php foreach($cui as $cuis): ?>
 					value =" <?= $cuis->DIRECCION; ?>" 
 					<?php endforeach; ?>  
-					aria-describedby="basic-addon1">
+					aria-describedby="basic-addon1" readonly>
 			</div>
 			<div class="input-group wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
 				<span class="input-group-addon" id="basic-addon1"></span>
@@ -142,7 +142,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<?php foreach($cui as $cuis): ?>
 					value =" <?= $cuis->CUI; ?>" 
 					<?php endforeach; ?>  
-					aria-describedby="basic-addon1">
+					aria-describedby="basic-addon1" readonly>
 			</div>
 							
 				
