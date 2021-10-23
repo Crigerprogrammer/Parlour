@@ -90,7 +90,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <!-- header -->
 
-<form method="POST" name="CrearCliente" enctype="multipart/form-data">
+<form method="POST" name="cCompra" enctype="multipart/form-data">
 <div class="typo">
 	<div class="container">
 <h3 class="bars wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">Comprar</h3>
@@ -148,9 +148,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 			<div class="input-group wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
 			<span class="input-group-addon" id="basic-addon1"></span>
-			<select name="tip_usuario" class="form-control" name="promocion">
+			<select name="promocion" class="form-control" >
 			<?php foreach($promociones as $promocion): ?>
-						<option value="<?= $promocion->COD_PROMOCION; ?>" class="form-control"><?= $promocion->DESC_PROMOCION; ?></option>
+						<option name="promocion" value="<?= $promocion->COD_PROMOCION; ?>" class="form-control"><?= $promocion->DESC_PROMOCION; ?></option>
 				<?php endforeach; ?>   
 			</select>
 			</div>
