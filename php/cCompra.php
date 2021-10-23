@@ -4,7 +4,7 @@ require ("conexion.php");
 if(isset($_POST['cui'])){
     $cui = $_POST['cui'];
     $promocion = $_POST['promocion'];
-    $movimiento = 1;
+    $movimiento = '1';
    
     $sql = "INSERT INTO MOV_SUSCRIPCIONES (CUI, COD_PROMOCION, COD_MOVIMIENTO)
             VALUES('".$cui."', '".$promocion."','".$movimiento."')";
@@ -15,6 +15,6 @@ if(isset($_POST['cui'])){
         echo '<h1 class= "bad">';
         echo $mensaje;
         echo '</h1>';
-        header ("location:events.php");
+        header ("location:index2.php");
     }
 }
