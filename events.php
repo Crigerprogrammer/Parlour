@@ -118,7 +118,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<span class="input-group-addon" id="basic-addon1"></span>
 				<input 
 					type="text" 
-					class="form-control"  
+					class="form-control" 
 					<?php foreach($cui as $cuis): ?>
 					value =" <?= $cuis->CORREO; ?>" 
 					<?php endforeach; ?>  
