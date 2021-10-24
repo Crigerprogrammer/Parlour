@@ -174,7 +174,8 @@
 				<div class="col-md-6 banner-bottom-grid-1 wow fadeInLeftBig" data-wow-duration="1500ms" data-wow-delay="100ms">
 					<h3>Sabemos lo que te gusta &#x1F37B;</h3>
 					<?php
-						echo "Nombre de usuario recuperado de la variable de sesión:" . $_SESSION['usuario'];
+						session_start();
+						echo "Nombre de usuario recuperado de la variable de sesión:" . $_SESSION['user'];
 						echo "<br><br>";
 						?>
 				</div>
