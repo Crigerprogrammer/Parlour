@@ -34,7 +34,11 @@ $_SESSION['user']=$_POST['usuario'];
 		//echo "<script type='text/javascript'>alert('$msg');</script>";
 		header("location:index2.php");
 	}
-      
+	elseif($codigo_usuario == 9)
+	{
+		//echo "<script type='text/javascript'>alert('$msg');</script>";
+		header("location:indexadmin.php");
+	} 
 
   } else{
       ?>
