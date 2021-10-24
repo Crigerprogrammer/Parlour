@@ -42,7 +42,7 @@ session_start();
       require 'index.php';
 
       ?>
-        <h1 class="bad">ERROR DE AUTENTICACIÓN, SI NO RECUERDA SU CONTRASEÑA CONTÁCTENOS</h1>
+        <h1 class="bad">USUARIO O CONTRASEÑA INCORRECTOS</h1>
   <?php
       }
 
