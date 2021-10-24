@@ -25,7 +25,6 @@
 
 <body>
 <!-- header -->
-	<?php echo  $_SESSION['usuario'] ?>
 	<div class="header">
 		<div class="container">
 			<nav class="navbar navbar-default">
@@ -174,6 +173,7 @@
 				</div>
 				<div class="col-md-6 banner-bottom-grid-1 wow fadeInLeftBig" data-wow-duration="1500ms" data-wow-delay="100ms">
 					<h3>Sabemos lo que te gusta &#x1F37B;</h3>
+					<?php echo  $_SESSION['usuario'] ?>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
