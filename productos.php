@@ -63,7 +63,6 @@
 								  <li><a href="services.html">Nuestro Servicio</a></li>
 								</ul>
 							</li>
-							<li><a href="mail.html">Contactanos</a></li>
 							<li><a href="destroy.php">Cerrar Sesion</a></li>
 						</ul>
 					</nav>
@@ -80,7 +79,7 @@
 <!-- header -->
 
 
-<h1 class="animated fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="300ms">Arte en Azúcar<span>Nuestros Productos</span></h1>
+<h1 class="animated fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="300ms"><span>Nuestros Productos</span></h1>
 
 
 

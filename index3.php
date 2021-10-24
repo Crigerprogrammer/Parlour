@@ -56,7 +56,6 @@
 								<li><a href="productos.php">Nuestros Productos</a></li>
 								</ul>
 							</li>
-							<li><a href="mail.html">Contactanos</a></li>
 							<li><a href="destroy.php">Cerrar Sesion</a></li>
 						</ul>
 					</nav>
