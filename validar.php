@@ -42,7 +42,7 @@ $_SESSION['usuario']=$_POST['usuario'];
       require 'index.php';
 
       ?>
-        <h1 class="bad">ERROR DE AUTENTICACIÓN, SI NO RECUERDA SU CONTRASEÑA CONTÁCTENOS</h1>
+        <h1 class="bad">USUARIO O CONTRASEÑA INCORRECTO</h1>
   <?php
       }
 
