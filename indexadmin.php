@@ -1,5 +1,6 @@
 <?php
 	session_start();
+    
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -64,7 +65,7 @@
 <!-- header -->
 
 <?php
-    echo "<center><h1>Bienvenido" . $_SESSION['user'] "</h1></center>";
+    echo "<center><h1>Bienvenido" . $_SESSION['user'] . "</h1></center>";
 
 ?>
 
