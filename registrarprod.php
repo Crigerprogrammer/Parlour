@@ -78,7 +78,7 @@
                     placeholder = "Nombre del Producto"
 					class="form-control" 
                     name = "nombre"
-					aria-describedby="basic-addon1" readonly>
+					aria-describedby="basic-addon1" >
 			</div>
 			<div class="input-group wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
 				<span class="input-group-addon" id="basic-addon1"></span>
@@ -87,7 +87,7 @@
                     placeholder = "Descripcion Producto"
 					class="form-control" 
                     name = "descripcion"
-					aria-describedby="basic-addon1" readonly>
+					aria-describedby="basic-addon1" >
 			</div>
 			
 			<div class="input-group wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">			
