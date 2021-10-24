@@ -44,6 +44,7 @@
 					<span class="icon-bar"></span>
 				  </button>
 					<div class="logo">
+						<a class="navbar-brand" href="index2.php">Parlour</a>
 					</div>
 				</div>
 
@@ -58,8 +59,7 @@
 								  Nosotros <span class="caret"></span>
 								</a>
 								<ul class="dropdown-menu">
-								  <li><a href="services.html">Nuestro Productos</a></li>
-								  <li><a href="services.html">Nuestro Servicio</a></li>
+								<li><a href="productos.php">Nuestro Productos</a></li>
 								</ul>
 							</li>
 							<li><a href="destroy.php">Cerrar Sesion</a></li>

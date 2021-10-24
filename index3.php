@@ -26,6 +26,7 @@
 </head>
 
 <body>
+
 <!-- header -->
 <div class="header">
 		<div class="container">
@@ -38,7 +39,7 @@
 					<span class="icon-bar"></span>
 				  </button>
 					<div class="logo">
-						<a class="navbar-brand" href="index3.php">Parlour</a>
+						<a class="navbar-brand" href="index2.php">Parlour</a>
 					</div>
 				</div>
 
@@ -53,7 +54,7 @@
 								  Nosotros <span class="caret"></span>
 								</a>
 								<ul class="dropdown-menu">
-								<li><a href="productos.php">Nuestros Productos</a></li>
+								<li><a href="productos.php">Nuestro Productos</a></li>
 								</ul>
 							</li>
 							<li><a href="destroy.php">Cerrar Sesion</a></li>
@@ -70,6 +71,7 @@
 		</div>
 	</div>
 <!-- header -->
+
 <!-- banner -->
 	<div class="banner">
 		<div class="container">

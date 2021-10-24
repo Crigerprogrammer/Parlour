@@ -49,47 +49,47 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 <!-- header -->
 <div class="header">
-	<div class="container">
-		<nav class="navbar navbar-default">
-			<div class="navbar-header">
-			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			  </button>
-				<div class="logo">
-				<a class="navbar-brand">Parlour</a>
-
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+					<div class="logo">
+						<a class="navbar-brand" href="index2.php">Parlour</a>
+					</div>
 				</div>
-			</div>
 
-			<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
-				<nav class="cl-effect-13" id="cl-effect-13">
-					<ul class="nav navbar-nav">
-						<li><a href="index2.php" class="active">Inicio</a></li>
-						<li><a href="events.php">Comprar</a></li>
-						<li><a href="compras.php">Ver mis compras</a></li>
-						<li role="presentation" class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-							  Nosotros <span class="caret"></span>
-							</a>
-							<ul class="dropdown-menu">
-							  <li><a href="productos.php">Nuestro Productos</a></li>
-							</ul>
-						</li>
-					</ul>
-				</nav>
-				<div class="social-icons">
-					<ul>
-						<li><a class="icon-link round twitter" href="https://www.facebook.com/Parlour-101267062128381"></a></li>
-					</ul>
+				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+					<nav class="cl-effect-13" id="cl-effect-13">
+						<ul class="nav navbar-nav">
+							<li><a href="index2.php" class="active">Inicio</a></li>
+							<li><a href="events.php">Comprar</a></li>
+							<li><a href="compras.php">Ver Mis Compras</a></li>
+							<li role="presentation" class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+								  Nosotros <span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+								<li><a href="productos.php">Nuestro Productos</a></li>
+								</ul>
+							</li>
+							<li><a href="destroy.php">Cerrar Sesion</a></li>
+						</ul>
+					</nav>
+					<div class="social-icons">
+						<ul>
+							<li><a class="icon-link round twitter" href="https://www.facebook.com/Parlour-101267062128381"></a></li>
+						</ul>
+					</div>
 				</div>
-			</div>
-			<!-- /.navbar-collapse -->
-		</nav>
+				<!-- /.navbar-collapse -->
+			</nav>
+		</div>
 	</div>
-</div>
 <!-- header -->
 
 <form method="POST" name="cCompra" enctype="multipart/form-data">
