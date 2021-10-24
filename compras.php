@@ -51,7 +51,7 @@
 					<span class="icon-bar"></span>
 				  </button>
 					<div class="logo">
-						<a class="navbar-brand" href="index.html">Parlour</a>
+					<a class="navbar-brand">Parlour</a>
 					</div>
 				</div>
 
