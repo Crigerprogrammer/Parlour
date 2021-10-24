@@ -47,7 +47,7 @@
 						<ul class="nav navbar-nav">
 							<li><a href="index2.php" class="active">Inicio</a></li>
 							<li><a href="events.php">Comprar</a></li>
-							<li><a href="short-codes.html">Suscribirme!</a></li>
+							<li><a href="compras.php">Ver Mis Compras</a></li>
 							<li role="presentation" class="dropdown">
 								<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
 								  Nosotros <span class="caret"></span>
