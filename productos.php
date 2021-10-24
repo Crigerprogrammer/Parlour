@@ -1,11 +1,11 @@
 <?php
 	session_start();
-
+    require 'php/conexion.php';
     $sql2 = "
     SELECT * FROM PRODUCTO ";
     $statement2 = $conn->prepare($sql2);
     $statement2->execute();
-    $compra = $statement2->fetchAll(PDO::FETCH_OBJ);
+    $producto = $statement2->fetchAll(PDO::FETCH_OBJ);
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -90,11 +90,11 @@
           <th>Nombre Producto</th>
           <th>Descripción Producto</th>
         </tr>
-        <?php foreach($compra as $compras): ?>
+        <?php foreach($producto as $productos): ?>
         <tr>
-          <td><?= $compras->COD_PRODUCTO; ?></td>
-          <td><?= $compras->NOMBRE_PRODUCTO; ?></td>
-          <td><?= $compras->DESC_PRODUCTO; ?></td>
+          <td><?= $productos->COD_PRODUCTO; ?></td>
+          <td><?= $productos->NOMBRE_PRODUCTO; ?></td>
+          <td><?= $productos->DESC_PRODUCTO; ?></td>
         </tr>
         <?php endforeach; ?>
       
