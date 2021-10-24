@@ -2,6 +2,12 @@
 	session_start();
     require 'php/cRegistro.php';
 
+    $sql2 = "
+    SELECT * FROM PRODUCTO ";
+    $statement2 = $conn->prepare($sql2);
+    $statement2->execute();
+    $producto = $statement2->fetchAll(PDO::FETCH_OBJ);
+
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -103,6 +109,24 @@
 	</div>
 
 </form>
+
+<table class="table table-bordered" style="width: 75% !important; margin:3% auto;">
+        <tr>
+          <th>Código Producto</th>
+          <th>Nombre Producto</th>
+          <th>Descripción Producto</th>
+        </tr>
+        <?php foreach($producto as $productos): ?>
+        <tr>
+          <td><?= $productos->COD_PRODUCTO; ?></td>
+          <td><?= $productos->NOMBRE_PRODUCTO; ?></td>
+          <td><?= $productos->DESC_PRODUCTO; ?></td>
+        </tr>
+        <?php endforeach; ?>
+      
+      
+      </table>
+
 
 
 

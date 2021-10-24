@@ -11,7 +11,7 @@ if(isset($_POST['nombre'])){
 
     if($statement->execute()){
         $mensaje = "PRODUCTO REGISTRADO";
-        header ("location:indexadmin.php");
+        header ("location:registrarprod.php");
         echo '<h1 class= "bad">';
         echo $mensaje;
         echo '</h1>';
