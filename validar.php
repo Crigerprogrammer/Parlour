@@ -42,7 +42,7 @@ session_start();
       require 'index.php';
 
       ?>
-        <h1 class="bad">USUARIO O CONTRASEÑA INCORRECTOS</h1>
+        <h1 class="bad">USUARIO O CONTRASEÑA INCORRECTO</h1>
   <?php
       }
 
