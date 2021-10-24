@@ -56,17 +56,10 @@
 				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 					<nav class="cl-effect-13" id="cl-effect-13">
 						<ul class="nav navbar-nav">
-							<li><a href="index2.php" class="active">Inicio</a></li>
-							<li><a href="events.php">Comprar</a></li>
-							<li><a href="compras.php">Ver Mis Compras</a></li>
-							<li role="presentation" class="dropdown">
-								<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-								  Nosotros <span class="caret"></span>
-								</a>
-								<ul class="dropdown-menu">
-								<li><a href="productos.php">Nuestro Productos</a></li>
-								</ul>
-							</li>
+							<li><a href="indexadmin.php" class="active">Inicio</a></li>
+							<li><a href="registrarprod.php">Ingresar Productos</a></li>
+							<li><a href="clientes.php">Ver Clientes</a></li>
+                            <li><a href="pedidos.php">Ver Compras</a></li>
 							<li><a href="destroy.php">Cerrar Sesion</a></li>
 						</ul>
 					</nav>
@@ -81,7 +74,6 @@
 		</div>
 	</div>
 <!-- header -->
-
 
 
 <table class="table table-bordered" style="width: 75% !important; margin:3% auto;">
