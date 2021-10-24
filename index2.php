@@ -25,6 +25,7 @@
 
 <body>
 <!-- header -->
+	<?php echo  $_SESSION['usuario'] ?>
 	<div class="header">
 		<div class="container">
 			<nav class="navbar navbar-default">

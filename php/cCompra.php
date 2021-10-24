@@ -12,7 +12,6 @@ if(isset($_POST['cui'])){
 
     if($statement->execute()){
         $mensaje = "COMPRA REGISTRADA";
-        
         header ("location:index2.php");
         echo '<h1 class= "bad">';
         echo $mensaje;

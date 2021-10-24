@@ -3,7 +3,7 @@ require 'php/conexion.php';
 $usuario=$_POST['usuario'];
 $contraseña=$_POST['contraseña'];
 session_start();
-//$_SESSION['usuario']=$usuario;
+$_SESSION['usuario']=$_POST['usuario'];
 
   $conn = new PDO("sqlsrv:server=tcp:parlor.database.windows.net,1433; Database=parlour", "parlouradmin", "Pasteleria2021$$");
 
