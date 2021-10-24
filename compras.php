@@ -1,5 +1,18 @@
 <?php
 	session_start();
+    require 'php/cCompra.php';
+
+    $sql2 = "
+    SELECT A.NUM_MOVIMIENTO, A.FEC_MOVIMIENTO, C.DESC_PROMOCION, C.PRECIO, B.CUI
+    FROM MOV_SUSCRIPCIONES A 
+    JOIN CLIENTE B ON A.CUI = B.CUI
+    JOIN PROMOCION C ON A.COD_PROMOCION = C.COD_PROMOCION
+    JOIN USUARIO D ON B.CUI = D.CUI
+    WHERE A.COD_MOVIMIENTO = 1
+    AND D.USUARIO = '".$_SESSION['user']."' ";
+    $statement2 = $conn->prepare($sql2);
+    $statement2->execute();
+    $compra = $statement2->fetchAll(PDO::FETCH_OBJ);
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -75,7 +88,26 @@
 
 
 
-
+<table class="table table-bordered" style="width: 75% !important; margin:3% auto;">
+        <tr>
+          <th>Fecha Movimiento</th>
+          <th>Promocion</th>
+          <th>Precio</th>
+          <th>Cui</th>
+          <th>Cancelar</th>
+        </tr>
+        <?php foreach($compra as $compras): ?>
+        <tr>
+          <td><?= $compras->FEC_MOVIMIENTO; ?></td>
+          <td><?= $compras->DESC_PROMOCION; ?></td>
+          <td><?= $compras->PRECIO; ?></td>
+          <td><?= $compras->CUI; ?></td>
+          <td><button type="button" class="btn btn-danger"><a onclick="return confirm('Esta seguro de eliminar la compra?')" href="php/eliminarcompra.php?borrar=<?php echo $compras->NUM_MOVIMIENTO ?>"> Eliminar </button>  </td></a>
+        </tr>
+        <?php endforeach; ?>
+      
+      
+      </table>
 
 
 
