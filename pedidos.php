@@ -1,11 +1,21 @@
 <?php
 	session_start();
-    
+    require 'php/cCompra.php';
+
+    $sql2 = "
+    SELECT A.NUM_MOVIMIENTO, A.FEC_MOVIMIENTO, C.DESC_PROMOCION, C.PRECIO, B.CUI
+    FROM MOV_SUSCRIPCIONES A 
+    JOIN CLIENTE B ON A.CUI = B.CUI
+    JOIN PROMOCION C ON A.COD_PROMOCION = C.COD_PROMOCION
+    WHERE A.COD_MOVIMIENTO = 1 ";
+    $statement2 = $conn->prepare($sql2);
+    $statement2->execute();
+    $compra = $statement2->fetchAll(PDO::FETCH_OBJ);
 ?>
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Parlour Arte en Azucar</title>
+<title>Parlour Arte en Azucar Premium</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -28,7 +38,7 @@
 
 <body>
 <!-- header -->
-	<div class="header">
+<div class="header">
 		<div class="container">
 			<nav class="navbar navbar-default">
 				<div class="navbar-header">
@@ -46,10 +56,17 @@
 				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 					<nav class="cl-effect-13" id="cl-effect-13">
 						<ul class="nav navbar-nav">
-							<li><a href="indexadmin.php" class="active">Inicio</a></li>
-							<li><a href="registrarprod.php">Ingresar Productos</a></li>
-							<li><a href="clientes.php">Ver Clientes</a></li>
-                            <li><a href="pedidos.php">Ver Compras</a></li>
+							<li><a href="index2.php" class="active">Inicio</a></li>
+							<li><a href="events.php">Comprar</a></li>
+							<li><a href="compras.php">Ver Mis Compras</a></li>
+							<li role="presentation" class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+								  Nosotros <span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+								<li><a href="productos.php">Nuestro Productos</a></li>
+								</ul>
+							</li>
 							<li><a href="destroy.php">Cerrar Sesion</a></li>
 						</ul>
 					</nav>
@@ -65,13 +82,36 @@
 	</div>
 <!-- header -->
 
-<?php
-    echo "<center><h1>Bienvenido" . $_SESSION['user'] . "</h1></center>";
 
-?>
+
+<table class="table table-bordered" style="width: 75% !important; margin:3% auto;">
+        <tr>
+          <th>Fecha Movimiento</th>
+          <th>Promocion</th>
+          <th>Precio</th>
+          <th>Cui</th>
+          <th>Cancelar</th>
+        </tr>
+        <?php foreach($compra as $compras): ?>
+        <tr>
+          <td><?= $compras->FEC_MOVIMIENTO; ?></td>
+          <td><?= $compras->DESC_PROMOCION; ?></td>
+          <td><?= $compras->PRECIO; ?></td>
+          <td><?= $compras->CUI; ?></td>
+          <td><button type="button" class="btn btn-danger"><a onclick="return confirm('Esta seguro de eliminar la compra?')" href="php/eliminarcompra.php?borrar=<?php echo $compras->NUM_MOVIMIENTO ?>"> Eliminar </button>  </td></a>
+        </tr>
+        <?php endforeach; ?>
+      
+      
+      </table>
+
+
+
+
+
 
 <!-- footer -->
-	<div class="footer">
+<div class="footer">
 		<div class="container">
 			<div class="footer-grids">
 				<div class="col-md-3 footer-grid wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">

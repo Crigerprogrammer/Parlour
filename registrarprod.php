@@ -56,6 +56,7 @@
 							<li><a href="indexadmin.php" class="active">Inicio</a></li>
 							<li><a href="registrarprod.php">Ingresar Productos</a></li>
 							<li><a href="clientes.php">Ver Clientes</a></li>
+                            <li><a href="pedidos.php">Ver Compras</a></li>
 							<li><a href="destroy.php">Cerrar Sesion</a></li>
 						</ul>
 					</nav>
