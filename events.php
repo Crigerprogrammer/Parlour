@@ -59,7 +59,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<span class="icon-bar"></span>
 			  </button>
 				<div class="logo">
-					<a class="navbar-brand" href="index.html">Parlour</a>
 				</div>
 			</div>
 
