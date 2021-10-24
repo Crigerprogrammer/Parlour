@@ -1,4 +1,6 @@
-
+<?php
+	session_start();
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -173,11 +175,7 @@
 				</div>
 				<div class="col-md-6 banner-bottom-grid-1 wow fadeInLeftBig" data-wow-duration="1500ms" data-wow-delay="100ms">
 					<h3>Sabemos lo que te gusta &#x1F37B;</h3>
-					<?php
-						session_start();
-						echo "Nombre de usuario recuperado de la variable de sesión:" . $_SESSION['user'];
-						echo "<br><br>";
-						?>
+					
 				</div>
 				<div class="clearfix"> </div>
 			</div>

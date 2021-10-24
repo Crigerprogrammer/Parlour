@@ -1,13 +1,16 @@
 <?php
+  session_start();
   require 'php/cCompra.php';
 
   $sql2 = "
-  SELECT * FROM CLIENTE 
-  WHERE FECHA_INGRESO = (SELECT MAX(FECHA_INGRESO) FROM CLIENTE)";
+	SELECT A.* FROM CLIENTE A  
+	JOIN USUARIO B ON A.CUI = B.CUI
+	WHERE B.USUARIO = '".$_SESSION['user']."' ";
   $statement2 = $conn->prepare($sql2);
   $statement2->execute();
   $cui = $statement2->fetchAll(PDO::FETCH_OBJ);
 
+  
 
   $sql = "SELECT * FROM PROMOCION";
   $statement = $conn->prepare($sql);
